@@ -26,7 +26,8 @@ a{text-decoration:none;color:inherit}img{display:block;max-width:100%}
 .nav-cta{background:linear-gradient(135deg,var(--teal),var(--blue));color:#fff;padding:11px 20px;border-radius:999px;font-weight:700;font-size:.88rem;white-space:nowrap}
 .fb-mini,.google-mini{width:38px;height:38px;border-radius:50%;display:grid!important;place-items:center;font-weight:900;flex-shrink:0}
 .fb-mini{background:#1877f2;color:#fff;font-family:Arial;font-size:1.2rem}
-.google-mini{background:#fff;color:#4285f4;font-family:Arial;font-size:1rem;border:1px solid rgba(15,99,132,.15)}
+a.google-mini{background:#fff;color:#ea4335;font-family:Arial;font-size:1.1rem;font-weight:900;transition:color .2s}
+a.google-mini:hover{color:#34a853}
 
 /* HERO */
 .hero{position:relative;overflow:hidden;min-height:100vh;display:flex;flex-direction:column;justify-content:center}
@@ -160,7 +161,10 @@ a{text-decoration:none;color:inherit}img{display:block;max-width:100%}
 .footer-col strong{color:#fff;font-size:1.1rem;display:block;margin-bottom:14px;font-family:'Playfair Display',serif}
 .footer-col p,.footer-col a{color:rgba(255,255,255,.6);font-size:.9rem;line-height:1.8;display:block}
 .footer-col a:hover{color:var(--teal)}
-.footer-bottom{border-top:1px solid rgba(255,255,255,.07);margin-top:32px;padding-top:20px;text-align:center;font-size:.82rem;color:rgba(255,255,255,.3)}
+.footer-motto{text-align:center;padding:36px 0 20px;border-top:1px solid rgba(255,255,255,.1);margin-top:36px}
+.footer-motto img{height:48px;width:auto;display:block;margin:0 auto 12px;opacity:.9}
+.footer-motto p{color:rgba(255,255,255,.6);font-size:.95rem;font-style:italic;letter-spacing:.02em}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.07);margin-top:20px;padding-top:20px;text-align:center;font-size:.82rem;color:rgba(255,255,255,.3)}
 
 /* RESPONSIVE */
 @media(max-width:960px){
