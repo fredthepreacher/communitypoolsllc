@@ -228,7 +228,8 @@
         <span>Pumps</span><span>Salt systems</span><span>Automation</span>
       </div>
     </div>
-    <form class="quote-form" id="quote-form">
+    <form class="quote-form" id="quote-form" name="quote" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="quote" />
       <div class="form-row">
         <label for="quote-name">Name</label>
         <input id="quote-name" name="name" type="text" placeholder="Your name" required>
@@ -259,8 +260,8 @@
         <label for="quote-message">Project details</label>
         <textarea id="quote-message" name="message" rows="5" placeholder="Tell us about the pool, issue, timeline, or any questions you have."></textarea>
       </div>
-      <button class="btn primary quote-submit" type="submit">Prepare Quote Request</button>
-      <p class="form-note">This opens your email app with the request filled in. You can also call <a href="tel:9412587529">941.258.7529</a>.</p>
+      <button class="btn primary quote-submit" type="submit">Submit Quote Request</button>
+      <p class="form-note">We'll be in touch shortly. You can also reach us at <a href="tel:9412587529">941.258.7529</a>.</p>
     </form>
   </div>
 </section>
@@ -331,6 +332,32 @@
   </div>
   <div class="footer-bottom wrap">&copy; 2026 Community Pools LLC. All rights reserved.</div>
 </footer>
+
+<!-- Thank You Overlay -->
+<div class="ty-overlay" id="ty-overlay" aria-hidden="true">
+  <div class="ty-overlay-bg"></div>
+  <div class="ty-card">
+    <div class="ty-check">
+      <svg viewBox="0 0 52 52" aria-hidden="true">
+        <polyline points="14,27 22,36 38,18" />
+      </svg>
+    </div>
+    <p class="ty-eyebrow">Request Received</p>
+    <h2 class="ty-heading">Thank You!</h2>
+    <p class="ty-body">Your quote inquiry has been submitted. A member of the Community Pools LLC team will review your request and follow up with you shortly.</p>
+    <div class="ty-divider"></div>
+    <div class="ty-detail-row">
+      <span>&#127949;</span>
+      <span>Port Charlotte, FL &middot; Swimming Pool Service</span>
+    </div>
+    <p class="ty-body" style="margin-bottom:28px;">Feel free to browse our work or give us a call if you'd like to speak with someone right away.</p>
+    <div class="ty-actions">
+      <button class="ty-btn-primary" id="ty-back">&#8592; Back to Website</button>
+      <a class="ty-btn-call" href="tel:9412587529">&#128222; Call us: 941.258.7529</a>
+    </div>
+    <img src="assets/communitypools_logo.png" alt="Community Pools LLC" class="ty-logo" />
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>

@@ -48,16 +48,33 @@ document.querySelectorAll('[data-compare]').forEach(slider => {
   });
 });
 
-/* Quote form */
-const qf = document.getElementById('quote-form');
-if (qf) qf.addEventListener('submit', function(e){
-  e.preventDefault();
-  const f       = this;
-  const name    = f.querySelector('[name=name]').value;
-  const phone   = f.querySelector('[name=phone]').value;
-  const email   = f.querySelector('[name=email]').value;
-  const service = f.querySelector('[name=service]').value;
-  const msg     = f.querySelector('[name=message]').value;
-  const body    = encodeURIComponent(`Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nService: ${service}\n\nDetails:\n${msg}`);
-  window.location.href = `mailto:?subject=${encodeURIComponent('Pool Service Quote Request – Community Pools LLC')}&body=${body}`;
-});
+/* Quote form — show thank-you overlay on submit, Netlify captures data */
+(function(){
+  const form    = document.getElementById('quote-form');
+  const overlay = document.getElementById('ty-overlay');
+  const backBtn = document.getElementById('ty-back');
+  if (!form || !overlay) return;
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    // Submit to Netlify via fetch so we stay on the page
+    const data = new FormData(form);
+    fetch('/', { method: 'POST', body: data })
+      .catch(() => {}); // silent fail — overlay still shows
+    overlay.classList.add('active');
+    overlay.removeAttribute('aria-hidden');
+    document.body.style.overflow = 'hidden';
+    // Restart check animation
+    const svg = overlay.querySelector('.ty-check svg');
+    if (svg) { svg.style.animation = 'none'; void svg.offsetWidth; svg.style.animation = ''; }
+  });
+
+  backBtn.addEventListener('click', function(){
+    overlay.classList.remove('active');
+    overlay.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    form.reset();
+    document.getElementById('quote').scrollIntoView({ behavior: 'smooth' });
+  });
+})();
+
