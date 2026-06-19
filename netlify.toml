@@ -1,0 +1,139 @@
+[build]
+  publish = "."
+
+# ─── Security headers (all pages) ──────────────────────────────────────────────
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+# ─── Cache: assets ─────────────────────────────────────────────────────────────
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# ─── Clean URLs ────────────────────────────────────────────────────────────────
+[[redirects]]
+  from = "/thank-you"
+  to   = "/thank-you.html"
+  status = 200
+
+[[redirects]]
+  from = "/faq"
+  to   = "/faq.html"
+  status = 200
+
+[[redirects]]
+  from = "/services/pool-cleaning"
+  to   = "/services/pool-cleaning.html"
+  status = 200
+
+[[redirects]]
+  from = "/services/pool-maintenance"
+  to   = "/services/pool-maintenance.html"
+  status = 200
+
+[[redirects]]
+  from = "/services/pool-repair"
+  to   = "/services/pool-repair.html"
+  status = 200
+
+[[redirects]]
+  from = "/services/green-pool-recovery"
+  to   = "/services/green-pool-recovery.html"
+  status = 200
+
+[[redirects]]
+  from = "/services/pool-heater-installation"
+  to   = "/services/pool-heater-installation.html"
+  status = 200
+
+[[redirects]]
+  from = "/services/variable-speed-pumps"
+  to   = "/services/variable-speed-pumps.html"
+  status = 200
+
+[[redirects]]
+  from = "/services/pool-automation"
+  to   = "/services/pool-automation.html"
+  status = 200
+
+[[redirects]]
+  from = "/services/saltwater-systems"
+  to   = "/services/saltwater-systems.html"
+  status = 200
+
+[[redirects]]
+  from = "/services/pool-equipment-repair"
+  to   = "/services/pool-equipment-repair.html"
+  status = 200
+
+[[redirects]]
+  from = "/services/leak-detection"
+  to   = "/services/leak-detection.html"
+  status = 200
+
+[[redirects]]
+  from = "/services/pool-renovations"
+  to   = "/services/pool-renovations.html"
+  status = 200
+
+[[redirects]]
+  from = "/locations/port-charlotte"
+  to   = "/locations/port-charlotte.html"
+  status = 200
+
+[[redirects]]
+  from = "/locations/punta-gorda"
+  to   = "/locations/punta-gorda.html"
+  status = 200
+
+[[redirects]]
+  from = "/locations/venice"
+  to   = "/locations/venice.html"
+  status = 200
+
+[[redirects]]
+  from = "/locations/englewood"
+  to   = "/locations/englewood.html"
+  status = 200
+
+[[redirects]]
+  from = "/locations/north-port"
+  to   = "/locations/north-port.html"
+  status = 200
+
+[[redirects]]
+  from = "/locations/rotonda-west"
+  to   = "/locations/rotonda-west.html"
+  status = 200
+
+[[redirects]]
+  from = "/lp/pool-cleaning"
+  to   = "/lp/pool-cleaning.html"
+  status = 200
+
+[[redirects]]
+  from = "/lp/pool-repair"
+  to   = "/lp/pool-repair.html"
+  status = 200
+
+# ─── 404 fallback ──────────────────────────────────────────────────────────────
+[[redirects]]
+  from = "/*"
+  to   = "/index.html"
+  status = 404

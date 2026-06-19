@@ -1,120 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Core pages -->
   <url>
     <loc>https://communitypoolsllc.com/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://communitypoolsllc.com/faq/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://communitypoolsllc.com/faq</loc>
     <priority>0.8</priority>
-  </url>
-  <!-- Service pages -->
-  <url>
-    <loc>https://communitypoolsllc.com/services/pool-cleaning.html</loc>
-    <lastmod>2026-06-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://communitypoolsllc.com/services/pool-maintenance.html</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://communitypoolsllc.com/thank-you</loc>
+    <priority>0.1</priority>
+    <changefreq>yearly</changefreq>
   </url>
   <url>
-    <loc>https://communitypoolsllc.com/services/pool-repair.html</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://communitypoolsllc.com/services/pool-equipment-repair.html</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://communitypoolsllc.com/services/leak-detection.html</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://communitypoolsllc.com/services/pool-openings.html</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://communitypoolsllc.com/services/pool-closings.html</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://communitypoolsllc.com/services/pool-renovations.html</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://communitypoolsllc.com/services/saltwater-systems.html</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://communitypoolsllc.com/services/green-pool-recovery.html</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <!-- Location pages -->
-  <url>
-    <loc>https://communitypoolsllc.com/locations/port-charlotte.html</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://communitypoolsllc.com/services/pool-cleaning</loc>
     <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://communitypoolsllc.com/locations/punta-gorda.html</loc>
-    <lastmod>2026-06-11</lastmod>
+    <loc>https://communitypoolsllc.com/services/pool-maintenance</loc>
+    <priority>0.9</priority>
     <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://communitypoolsllc.com/services/pool-repair</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://communitypoolsllc.com/services/green-pool-recovery</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://communitypoolsllc.com/services/pool-heater-installation</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://communitypoolsllc.com/services/variable-speed-pumps</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://communitypoolsllc.com/services/pool-automation</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://communitypoolsllc.com/services/saltwater-systems</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://communitypoolsllc.com/services/pool-equipment-repair</loc>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://communitypoolsllc.com/locations/north-port.html</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://communitypoolsllc.com/services/leak-detection</loc>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://communitypoolsllc.com/locations/englewood.html</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://communitypoolsllc.com/services/pool-renovations</loc>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://communitypoolsllc.com/locations/venice.html</loc>
-    <lastmod>2026-06-11</lastmod>
+    <loc>https://communitypoolsllc.com/locations/port-charlotte</loc>
+    <priority>0.85</priority>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://communitypoolsllc.com/locations/rotonda-west.html</loc>
-    <lastmod>2026-06-11</lastmod>
+    <loc>https://communitypoolsllc.com/locations/punta-gorda</loc>
+    <priority>0.85</priority>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://communitypoolsllc.com/locations/cape-coral.html</loc>
-    <lastmod>2026-06-11</lastmod>
+    <loc>https://communitypoolsllc.com/locations/venice</loc>
+    <priority>0.85</priority>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://communitypoolsllc.com/locations/englewood</loc>
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://communitypoolsllc.com/locations/north-port</loc>
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://communitypoolsllc.com/locations/rotonda-west</loc>
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://communitypoolsllc.com/lp/pool-cleaning</loc>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://communitypoolsllc.com/lp/pool-repair</loc>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
   </url>
 </urlset>

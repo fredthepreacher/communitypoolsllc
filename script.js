@@ -1,4 +1,4 @@
-/* Slideshow */
+/* ─── Slideshow ─────────────────────────────────────────────────────────────── */
 (function(){
   const slides = document.querySelectorAll('.hero-slide');
   const dots   = document.querySelectorAll('.slide-dot');
@@ -15,7 +15,7 @@
   dots.forEach((d,i) => d.addEventListener('click', () => { clearInterval(timer); go(i); timer = setInterval(() => go(cur+1), 5000); }));
 })();
 
-/* Mobile nav */
+/* ─── Mobile nav ────────────────────────────────────────────────────────────── */
 (function(){
   const toggle = document.querySelector('.menu-toggle');
   const links  = document.querySelector('.nav-links');
@@ -27,7 +27,7 @@
   links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
 })();
 
-/* Before/After Sliders */
+/* ─── Before/After Sliders ──────────────────────────────────────────────────── */
 document.querySelectorAll('[data-compare]').forEach(slider => {
   const before = slider.querySelector('.compare-before');
   const handle = slider.querySelector('.compare-handle');
@@ -48,33 +48,13 @@ document.querySelectorAll('[data-compare]').forEach(slider => {
   });
 });
 
-/* Quote form — show thank-you overlay on submit, Netlify captures data */
-(function(){
-  const form    = document.getElementById('quote-form');
-  const overlay = document.getElementById('ty-overlay');
-  const backBtn = document.getElementById('ty-back');
-  if (!form || !overlay) return;
-
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
-    // Submit to Netlify via fetch so we stay on the page
-    const data = new FormData(form);
-    fetch('/', { method: 'POST', body: data })
-      .catch(() => {}); // silent fail — overlay still shows
-    overlay.classList.add('active');
-    overlay.removeAttribute('aria-hidden');
-    document.body.style.overflow = 'hidden';
-    // Restart check animation
-    const svg = overlay.querySelector('.ty-check svg');
-    if (svg) { svg.style.animation = 'none'; void svg.offsetWidth; svg.style.animation = ''; }
-  });
-
-  backBtn.addEventListener('click', function(){
-    overlay.classList.remove('active');
-    overlay.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = '';
-    form.reset();
-    document.getElementById('quote').scrollIntoView({ behavior: 'smooth' });
-  });
-})();
-
+/* ─── FAQ Accordion ─────────────────────────────────────────────────────────── */
+document.querySelectorAll('.faq-q').forEach(btn => {
+  btn.addEventListener('click', function(){
+    const item   = this.closest('.faq-item');
+    const answer = item.querySelector('.faq-a');
+    const open   = item.classList.contains('open');
+    // close all
+    document.querySelectorAll('.faq-item.open').forEach(el => {
+      el.classList.remove('open');
+      el.querySelector('.faq-q').se
