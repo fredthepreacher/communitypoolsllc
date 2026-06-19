@@ -57,32 +57,4 @@ document.querySelectorAll('.faq-q').forEach(btn => {
     // close all
     document.querySelectorAll('.faq-item.open').forEach(el => {
       el.classList.remove('open');
-      el.querySelector('.faq-a').style.maxHeight = null;
-    });
-    // open clicked if it was closed
-    if (!open) {
-      item.classList.add('open');
-      answer.style.maxHeight = answer.scrollHeight + 'px';
-    }
-  });
-});
-
-/* ─── Quote Form ────────────────────────────────────────────────────────────── */
-(function(){
-  const form = document.querySelector('form[data-netlify]');
-  if (!form) return;
-  form.addEventListener('submit', function(){
-    const btn = form.querySelector('[type=submit]');
-    if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
-  });
-})();
-
-/* ─── Landing Page Form ─────────────────────────────────────────────────────── */
-(function(){
-  const form = document.querySelector('.lp-form');
-  if (!form) return;
-  form.addEventListener('submit', function(){
-    const btn = form.querySelector('[type=submit]');
-    if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
-  });
-})();
+      el.querySelector('.faq-q').se
