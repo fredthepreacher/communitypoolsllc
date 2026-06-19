@@ -171,6 +171,21 @@
     ]
   }
   </script>
+
+  <!-- ============================================================ -->
+  <!-- GOOGLE ADS TRACKING — ACTION REQUIRED BEFORE GOING LIVE     -->
+  <!-- Step 1: In Google Ads go to Goals > Conversions > your       -->
+  <!--         "Quote Request" action > Tag setup > Use Google Tag  -->
+  <!-- Step 2: Copy your Conversion ID (format: AW-123456789)       -->
+  <!-- Step 3: Replace BOTH instances of AW-XXXXXXXXX below         -->
+  <!-- ============================================================ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-XXXXXXXXX');
+  </script>
 </head>
 <body>
 
