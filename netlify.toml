@@ -34,7 +34,7 @@
 
 [[redirects]]
   from = "/faq"
-  to   = "/faq.html"
+  to   = "/faq/index.html"
   status = 200
 
 [[redirects]]
@@ -120,6 +120,26 @@
 [[redirects]]
   from = "/locations/rotonda-west"
   to   = "/locations/rotonda-west.html"
+  status = 200
+
+[[redirects]]
+  from = "/locations/placida"
+  to   = "/locations/placida.html"
+  status = 200
+
+[[redirects]]
+  from = "/locations/boca-grande"
+  to   = "/locations/boca-grande.html"
+  status = 200
+
+[[redirects]]
+  from = "/locations/osprey"
+  to   = "/locations/osprey.html"
+  status = 200
+
+[[redirects]]
+  from = "/locations/sarasota"
+  to   = "/locations/sarasota.html"
   status = 200
 
 [[redirects]]

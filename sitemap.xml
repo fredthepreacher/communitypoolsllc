@@ -101,6 +101,26 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>https://communitypoolsllc.com/locations/placida</loc>
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://communitypoolsllc.com/locations/boca-grande</loc>
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://communitypoolsllc.com/locations/osprey</loc>
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://communitypoolsllc.com/locations/sarasota</loc>
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>https://communitypoolsllc.com/lp/pool-cleaning</loc>
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
